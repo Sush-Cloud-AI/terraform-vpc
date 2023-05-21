@@ -1,4 +1,5 @@
 module "vpc" {
-  source = "git::https://github.com/Sush-Cloud-AI/tf-module-vpc.git"
+  source = "./vendor/modules/vpc"
+  VPC_CIDR = var.VPC_CIDR
 }
 # branch cant be parameterised in source. so we use Terrafile 
