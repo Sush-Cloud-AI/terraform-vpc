@@ -20,12 +20,12 @@ pipeline {
     }
     }
 
-    // stage("terraform apply"){
-    //     steps{
+    stage("terraform apply"){
+        steps{
 
-    //       sh "terraform apply -var-file=env-${ENV}/${ENV}.tfvars -auto-approve"
-    // }
-    // }
+          sh "terraform apply -var-file=env-${ENV}/${ENV}.tfvars -auto-approve"
+    }
+    }
 
 }
 }
