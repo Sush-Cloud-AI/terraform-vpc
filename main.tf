@@ -4,5 +4,7 @@ module "vpc" {
   ENV = var.ENV
   SUBNET_CIDR = var.SUBNET_CIDR
   AZ =var.AZ
+  DEFAULT_VPC_ID = var.DEFAULT_VPC_ID 
+  
 }
 # branch cant be parameterised in source. so we use Terrafile 
