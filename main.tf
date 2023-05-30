@@ -6,7 +6,7 @@ module "vpc" {
   AZ =var.AZ
   DEFAULT_VPC_ID = var.DEFAULT_VPC_ID 
   DEFAULT_VPC_CIDR = var.DEFAULT_VPC_CIDR
-  DEFAULT_RT = var.DEFAULT_RT
+  DEFAULT_VPC_RT = var.DEFAULT_VPC_RT
   
 }
 # branch cant be parameterised in source. so we use Terrafile 
